@@ -160,11 +160,11 @@
     <div class="ticker" aria-hidden="true">
       <div class="ticker-track">
         <span>Linux</span><span>Docker</span><span>Ansible</span><span>Nginx</span><span>Prometheus</span>
-        <span>Grafana</span><span>PostgreSQL</span><span>FortiGate</span><span>Jenkins</span><span>Symfony</span>
-        <span>Flask</span><span>React</span><span>VLAN</span><span>Bash</span>
+        <span>Grafana</span><span>PostgreSQL</span><span>FortiGate</span><span>Jenkins</span><span>GitHub Actions</span><span>Symfony</span>
+        <span>Flask</span><span>React</span><span>Flutter</span><span>FastAPI</span><span>VLAN</span><span>Bash</span>
         <span>Linux</span><span>Docker</span><span>Ansible</span><span>Nginx</span><span>Prometheus</span>
-        <span>Grafana</span><span>PostgreSQL</span><span>FortiGate</span><span>Jenkins</span><span>Symfony</span>
-        <span>Flask</span><span>React</span><span>VLAN</span><span>Bash</span>
+        <span>Grafana</span><span>PostgreSQL</span><span>FortiGate</span><span>Jenkins</span><span>GitHub Actions</span><span>Symfony</span>
+        <span>Flask</span><span>React</span><span>Flutter</span><span>FastAPI</span><span>VLAN</span><span>Bash</span>
       </div>
     </div>
 
@@ -179,7 +179,7 @@
           <p class="kicker"><span>01</span> Études de cas</p>
           <h2 class="section-title">Projets <em>réalisés</em></h2>
           <p class="section-lead">
-            Quatre réalisations techniques présentées selon la méthodologie : Contexte, Défi, Solution et Résultats.
+            Six réalisations techniques présentées selon la méthodologie : Contexte, Défi, Solution et Résultats.
           </p>
         </header>
 
@@ -252,7 +252,7 @@
               <li>Grafana</li>
             </ul>
 
-            <a class="link-arrow" href="https://github.com/ramangalahyheriniaina-byte" target="_blank"
+            <a class="link-arrow" href="https://github.com/ramangalahyheriniaina-byte/devops-3tier-project" target="_blank"
               rel="noopener noreferrer">
               Voir le code sur GitHub
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -312,6 +312,85 @@
               <li>Windows Server</li>
               <li>WinRM</li>
             </ul>
+          </article>
+
+          <!-- Projet 5 : EduFlow -->
+          <article class="project" data-spotlight>
+            <div class="project-top">
+              <span class="project-index">05</span>
+              <span class="project-domain">Développement · Architecture</span>
+            </div>
+
+            <h3 class="project-title">EduFlow — Plateforme de gestion scolaire</h3>
+
+            <p class="project-desc">
+              <strong>Contexte :</strong> Projet de Licence 2 : application multi-plateforme pour gérer les années scolaires, classes, professeurs, matières et séances, avec trois rôles (admin, enseignant, étudiant).
+            </p>
+
+            <ul class="project-list">
+              <li><strong>Défi :</strong> Concevoir une application modulaire où authentification, gestion pédagogique et analyse de programmes évoluent indépendamment.</li>
+              <li><strong>Solution :</strong> Architecture en services (API Node/Express avec JWT, API FastAPI, service Flask d'analyse de PDF par IA Gemini), base PostgreSQL et frontend Flutter, conteneurisés avec Docker Compose et servis derrière Nginx.</li>
+              <li><strong>Résultat :</strong> Environnements de développement et de production lancés avec Docker Compose, healthchecks et authentification par rôles.</li>
+            </ul>
+
+            <ul class="tags">
+              <li>Flutter</li>
+              <li>Node.js</li>
+              <li>FastAPI</li>
+              <li>Flask</li>
+              <li>PostgreSQL</li>
+              <li>Docker Compose</li>
+              <li>Nginx</li>
+              <li>JWT</li>
+            </ul>
+
+            <a class="link-arrow" href="https://github.com/ramangalahyheriniaina-byte/VOTRE-REPO" target="_blank"
+              rel="noopener noreferrer">
+              Voir le code sur GitHub
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 16L16 8M9 8h7v7" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Projet 6 : Application météo -->
+          <article class="project" data-spotlight>
+            <div class="project-top">
+              <span class="project-index">06</span>
+              <span class="project-domain">Développement · CI/CD</span>
+            </div>
+
+            <h3 class="project-title">Application Météo — Docker &amp; CI/CD</h3>
+
+            <p class="project-desc">
+              <strong>Contexte :</strong> Application web de consultation météo (conditions actuelles et prévisions sur 5 jours) conçue pour mettre en pratique la conteneurisation et l'intégration continue.
+            </p>
+
+            <ul class="project-list">
+              <li><strong>Défi :</strong> Séparer proprement le frontend et l'API, protéger la clé de l'API externe et garantir que chaque modification soit testée et construite de façon reproductible.</li>
+              <li><strong>Solution :</strong> API REST Node.js/Express interrogeant OpenWeatherMap (clé injectée par variable d'environnement, jamais versionnée), frontend HTML/CSS/JS servi par Nginx, orchestration des deux conteneurs avec Docker Compose et pipeline GitHub Actions en 3 étapes : test, build des images, déploiement.</li>
+              <li><strong>Résultat :</strong> Application complète lancée en une commande (<code>docker compose up</code>), avec build et validation automatiques des images Docker à chaque push et pull request sur la branche principale.</li>
+            </ul>
+
+            <ul class="tags">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Docker</li>
+              <li>Docker Compose</li>
+              <li>Nginx</li>
+              <li>GitHub Actions</li>
+              <li>REST API</li>
+            </ul>
+
+            <a class="link-arrow" href="https://github.com/ramangalahyheriniaina-byte/application-meteo-docker-cicd" target="_blank"
+              rel="noopener noreferrer">
+              Voir le code sur GitHub
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 16L16 8M9 8h7v7" />
+              </svg>
+            </a>
           </article>
 
         </div>
@@ -407,6 +486,7 @@
               <li>Ansible</li>
               <li>Git / GitHub</li>
               <li>Jenkins</li>
+              <li>GitHub Actions</li>
             </ul>
           </article>
 
@@ -457,7 +537,10 @@
             <ul class="chips">
               <li>PHP / Symfony</li>
               <li>Python / Flask</li>
+              <li>FastAPI</li>
+              <li>Node.js / Express</li>
               <li>React</li>
+              <li>Flutter</li>
               <li>HTML / CSS / JS</li>
             </ul>
           </article>
